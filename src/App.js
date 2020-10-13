@@ -1,17 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
 import ButtonGrid from './components/ButtonGrid/index';
-debugger;
+import InputDisplay from './components/InputDisplay/index';
 
-function App() {
+const App = () => {
+
+  const [operator, changeOperator] = useState(null);
+  const [num1, updateNum1] = useState('');
+  const [num2, updateNum2] = useState('');
+
+  const onUserInput = (val) => {
+    if (num1 === '' && operator) {
+      updateNum2(num2 + val);
+    } else {
+      updateNum1(num1 + val);
+    }
+  }
+
   return (
     <div className="App">
       <header className="App-header">
       </header>
       <main>
-        <ButtonGrid />
+        <InputDisplay display={num1}/>
+        <ButtonGrid onClick={onUserInput}/>
       </main>
     </div>
   );

@@ -25,7 +25,8 @@ const ButtonGrid = props => (
     {buttonValues.map(val => (
         <Button
           key={val[1]}
-          val={val}/>
+          val={val}
+          onClick={() => props.onClick(val[0])}/>
     ))}
   </div>
 );

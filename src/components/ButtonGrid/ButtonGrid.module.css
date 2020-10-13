@@ -3,6 +3,7 @@ button {
   font-size: 24px;
   height: 100px;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 .clear {
@@ -40,21 +41,31 @@ button {
   color: white;
   background: red;
   grid-area: equals;
+  font-weight: bold;
 }
 .plus {
   color: white;
   background: red;
   grid-area: plus;
+  font-weight: bold;
 }
 .divide {
   color: white;
   background: red;
   grid-area: divide;
+  font-weight: bold;
 }
 .times {
   color: white;
   background: red;
   grid-area: times;
+  font-weight: bold;
+}
+.minus {
+  color: white;
+  background: red;
+  grid-area: minus;
+  font-weight: bold;
 }
 
 .ButtonGrid {
