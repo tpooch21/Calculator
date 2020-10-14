@@ -1,12 +1,13 @@
 button {
   background: white;
-  font-size: 24px;
+  font-size: 40px;
   height: 100px;
   border: 1px solid black;
   cursor: pointer;
 }
 
 .clear {
+  font-size: 32px;
   grid-area: clear;
 }
 .seven {
@@ -36,49 +37,54 @@ button {
 .two {
   grid-area: two;
 }
+.zero {
+  grid-area: zero;
+}
 
 .equals {
   color: white;
   background: red;
   grid-area: equals;
-  font-weight: bold;
+
 }
 .plus {
   color: white;
   background: red;
   grid-area: plus;
-  font-weight: bold;
 }
 .divide {
   color: white;
   background: red;
   grid-area: divide;
-  font-weight: bold;
 }
 .times {
   color: white;
   background: red;
   grid-area: times;
-  font-weight: bold;
 }
 .minus {
   color: white;
   background: red;
   grid-area: minus;
-  font-weight: bold;
+}
+.decimal {
+  color: white;
+  background: red;
+  grid-area: decimal;
 }
 
 .ButtonGrid {
-  width: 450px;
+  width: 400px;
   height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
     'clear clear equals plus'
     'seven eight nine minus'
     'four five six times'
-    'one two three divide';
+    'one two three divide'
+    'zero zero zero decimal';
   column-gap: 0px;
   row-gap: 0px;
 }

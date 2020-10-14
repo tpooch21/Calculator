@@ -17,7 +17,9 @@ const buttonValues = [
   ['1', 'one'],
   ['2', 'two'],
   ['3', 'three'],
-  ['/', 'divide']
+  ['/', 'divide'],
+  ['0', 'zero'],
+  ['.', 'decimal'],
 ];
 
 const ButtonGrid = props => (

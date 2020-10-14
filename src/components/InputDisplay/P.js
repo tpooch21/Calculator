@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 const P = styled.p`
-  width: 450px;
+  width: 400px;
   height: 100px;
   background: #333;
-  color: white;
-  font-size: 32px;
+  color: #99f8ff;
+  font-size: 46px;
   line-height: 100px;
   margin-bottom: 0px;
   box-sizing: border-box;
